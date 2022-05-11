@@ -13,6 +13,7 @@
 		47252DD627FB2EB400D00B45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47252DD527FB2EB400D00B45 /* Preview Assets.xcassets */; };
 		47252DE127FB2EB500D00B45 /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252DE027FB2EB500D00B45 /* RecipeTests.swift */; };
 		47252DEC27FB2EB500D00B45 /* RecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252DEB27FB2EB500D00B45 /* RecipeUITests.swift */; };
+		47B2F089282B66DC00F6434E /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F088282B66DC00F6434E /* AppTabNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		47252DE727FB2EB500D00B45 /* RecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47252DEB27FB2EB500D00B45 /* RecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeUITests.swift; sourceTree = "<group>"; };
 		47252DED27FB2EB500D00B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B2F088282B66DC00F6434E /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		47252DCD27FB2EB300D00B45 /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				47B2F087282B665900F6434E /* Navigation */,
 				47252DCE27FB2EB300D00B45 /* RecipeApp.swift */,
 				47252DD027FB2EB300D00B45 /* ContentView.swift */,
 				47252DD227FB2EB400D00B45 /* Assets.xcassets */,
@@ -128,6 +131,14 @@
 				47252DED27FB2EB500D00B45 /* Info.plist */,
 			);
 			path = RecipeUITests;
+			sourceTree = "<group>";
+		};
+		47B2F087282B665900F6434E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				47B2F088282B66DC00F6434E /* AppTabNavigation.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				47252DD127FB2EB300D00B45 /* ContentView.swift in Sources */,
 				47252DCF27FB2EB300D00B45 /* RecipeApp.swift in Sources */,
+				47B2F089282B66DC00F6434E /* AppTabNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
