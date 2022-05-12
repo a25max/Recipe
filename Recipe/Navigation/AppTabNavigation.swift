@@ -21,7 +21,7 @@ struct AppTabNavigation: View {
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
-                
+                HomeView()
             }.tabItem {
                 let homeText = Text("ホーム", comment: "ホーム")
                 Label {

@@ -14,6 +14,10 @@
 		47252DE127FB2EB500D00B45 /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252DE027FB2EB500D00B45 /* RecipeTests.swift */; };
 		47252DEC27FB2EB500D00B45 /* RecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47252DEB27FB2EB500D00B45 /* RecipeUITests.swift */; };
 		47B2F089282B66DC00F6434E /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F088282B66DC00F6434E /* AppTabNavigation.swift */; };
+		47B2F08C282B6E1E00F6434E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F08B282B6E1E00F6434E /* HomeView.swift */; };
+		47B2F08F282B76BC00F6434E /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F08E282B76BC00F6434E /* RecipeList.swift */; };
+		47B2F091282B76CA00F6434E /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F090282B76CA00F6434E /* RecipeView.swift */; };
+		47B2F093282BB09300F6434E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F092282BB09300F6434E /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		47252DEB27FB2EB500D00B45 /* RecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeUITests.swift; sourceTree = "<group>"; };
 		47252DED27FB2EB500D00B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47B2F088282B66DC00F6434E /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
+		47B2F08B282B6E1E00F6434E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		47B2F08E282B76BC00F6434E /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		47B2F090282B76CA00F6434E /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		47B2F092282BB09300F6434E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,8 @@
 		47252DCD27FB2EB300D00B45 /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				47B2F08D282B76A100F6434E /* Recipe */,
+				47B2F08A282B6DCB00F6434E /* Home */,
 				47B2F087282B665900F6434E /* Navigation */,
 				47252DCE27FB2EB300D00B45 /* RecipeApp.swift */,
 				47252DD027FB2EB300D00B45 /* ContentView.swift */,
@@ -139,6 +149,24 @@
 				47B2F088282B66DC00F6434E /* AppTabNavigation.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		47B2F08A282B6DCB00F6434E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47B2F08B282B6E1E00F6434E /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		47B2F08D282B76A100F6434E /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				47B2F08E282B76BC00F6434E /* RecipeList.swift */,
+				47B2F090282B76CA00F6434E /* RecipeView.swift */,
+				47B2F092282BB09300F6434E /* Recipe.swift */,
+			);
+			path = Recipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B2F091282B76CA00F6434E /* RecipeView.swift in Sources */,
 				47252DD127FB2EB300D00B45 /* ContentView.swift in Sources */,
+				47B2F093282BB09300F6434E /* Recipe.swift in Sources */,
+				47B2F08C282B6E1E00F6434E /* HomeView.swift in Sources */,
+				47B2F08F282B76BC00F6434E /* RecipeList.swift in Sources */,
 				47252DCF27FB2EB300D00B45 /* RecipeApp.swift in Sources */,
 				47B2F089282B66DC00F6434E /* AppTabNavigation.swift in Sources */,
 			);
@@ -359,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -414,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,7 +466,7 @@
 				DEVELOPMENT_TEAM = 7SDW8Z29W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Recipe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +488,7 @@
 				DEVELOPMENT_TEAM = 7SDW8Z29W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Recipe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
